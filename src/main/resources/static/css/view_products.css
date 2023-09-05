@@ -1,0 +1,194 @@
+.blueshirt
+{
+    display: inline-block;
+    width:250px;
+    height: 400px;
+    top:0px;
+border: 2px solid black;
+position: relative;
+top: 50px;
+left:200px;
+
+}
+
+
+.jeans 
+{
+	display: inline-block;
+	border: 2px solid black;
+	margin-left: 30px;
+	position : relative;
+	left:450px;
+	bottom:350px;
+	width: 250px;
+	height: 380px;
+	
+	
+	
+}
+
+.jeans img
+{
+	
+	position: relative;
+	top: 27px;
+	display:block;
+
+	margin: 0px  auto;
+	margin-top: 30px;
+	
+	width : 50%;
+}
+
+
+.blueshirt img{
+
+    padding : 40px;
+    width: 240px;
+    margin-bottom: 30px;
+
+}
+
+.jeans span, .jeans label
+{
+	position: relative;
+
+    top: 40px;
+    left: 30px;
+
+    text-align: center;
+    color: blue;
+	
+}
+
+.blueshirt span, .blueshirt label 
+{
+    position: relative;
+
+
+    bottom: 55px;
+    left: 45px;
+   
+    text-align: center;
+    color: blue;
+}
+
+.blueshirt input{
+   position: relative;
+   left:160px;
+   bottom: 73px;
+   display: inline-block;
+   width: 25px; 
+}
+
+.jeans input
+{
+	position: relative;
+   left:130px;
+   top: 17px;
+   display: inline-block;
+   width: 25px; 
+}
+
+.blueshirt > #increaseqty, .blueshirt > #decreaseqty
+{
+position: relative;
+left:160px;
+bottom: 72px;
+}
+#Add_shirt
+{
+	position:relative;
+	bottom:37px;
+}
+.jeans > #increaseqty, .jeans > #decreaseqty 
+{
+position: relative;
+left:130px;
+top: 20px;
+}
+
+#Add_jeans
+{
+	position:relative;
+	top:50px;
+}
+
+
+
+.cloths_3
+{
+	height: 50px;
+	width : 50px;
+	border: 2px solid brown;
+}
+
+.cloth4
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap:21px;
+}
+
+.cartdata
+{
+text-align: center;
+margin-top:90px;
+}
+
+.userproducts
+{
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	position: relative;
+	top:20px;
+	
+	
+}
+.qty3
+{
+	margin-left:81px;
+}
+
+.price003
+{
+	margin-left:80px;
+}
+
+.cartinfo
+{
+position: relative;
+bottom:350px;
+left: 300px;
+}
+
+
+.cloth4:first-of-type
+{
+	position: absolute;
+	top : 800px;
+	left: 550px;
+}
+
+
+.totalamt
+{
+	
+		height: 250px;
+	width:60px;
+	
+	position:absolute;
+    top: 900px;
+    left: 800px;
+}
+
+
+
+.purchButton
+{
+	position: relative;
+	top: 300px;
+}

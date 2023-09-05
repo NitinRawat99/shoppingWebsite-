@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+
+    <section>
+    <div class="cart-items">
+    <div class="blueshirt">
+
+        <img src="/img/blue_shirt.PNG" class="cloths_img" alt="blue shirt">
+        <span class="clothes" id="cloths">Blue Shirt</span>
+        <span id="price">price</span>
+        <span class="price" th:text="${result[0].price}"></span>
+        <label for="qty">Quantity</label><br>
+        <input type="text" id="qty" class="qty" width=10px>
+        <button type="button" id="increaseqty" >+</button>
+        <button type="button" id="decreaseqty" >-</button>
+        <button type="button" id="Add_shirt" class="shop_item" onclick="ready()">Add to cart</button>
+        
+        </div>
+        
+        <div class="jeans">
+
+        <img src="/img/jeans.PNG" alt="jeans" class="cloths_img">
+        <span class="clothes" id="cloths">Blue Jeans</span>
+        <span id="price">price</span>
+        <span  class="price" th:text="${result[1].price}"></span>
+        <label for="qty">Quantity</label><br>
+        <input type="text" id="qty" class="qty" width=10px>
+        <button type="button" id="increaseqty" >+</button>
+        <button type="button" id="decreaseqty" >-</button>
+        <button type="button" id="Add_jeans" class="shop_item" onclick="ready()">Add to cart</button>
+        
+        </div>
+        </div>
+        
+       
+       <div class="cartinfo">
+       <div class="cartdata">
+       <h2 id="usercart">CART</h2>
+       </div>
+       <div class="userproducts">
+       <span class="item"><strong>Item</strong></span>
+       <span class="qty3"><strong>Quantity</strong></span>
+       <span class="price003"><strong>Price</strong></span>
+       
+      
+       </div>
+       <div class="purchase_button">
+       <a id="purchButton" class="purchButton" href="#" th:href="@{/user/purchase}">Purchase</a>
+       </div>
+       
+       </div>
+       
+        
+    </section>
+    
+    
+</body>
+</html>

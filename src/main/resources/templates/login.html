@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <div id="heading">
+    <h1 id="loginformhead">Login Form</h1>
+</div>
+<h3>This is custom login page</h3>
+<div class="login_form">
+<form th:action="@{/signin}" action="#" method="post">
+
+<div th:if="${param.error}" class="alert alert-danger">Invalid username and password</div>
+<div th:if="${param.logout}" class="alert alert-danger" >You have been logged out</div>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="username" name="username"><br><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" ><br><br>
+
+        <button type="button" value="submit" onclick="window.location.href='/user/dashboard'">Login</button>
+
+<script>
+window.alert();
+</script>
+</form>
+
+</div>
+
+
+</body>
+</html>
